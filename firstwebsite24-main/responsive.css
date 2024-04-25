@@ -1,0 +1,35 @@
+@media screen and (max-width: 480px) {
+   .card-grid {
+        grid-template-columns: 1fr;
+   } 
+   .content {
+    margin: 1em;
+   }
+   .main-header {
+    flex-wrap: wrap;
+   }
+   .nav-button {
+      display: block;
+   }
+   #search-form {
+      width: 100%;
+   }
+   .logo {
+      max-width: 60px;
+   }
+   .navigation {
+      flex-direction: column;
+      width: 100%;
+      max-height: 0px;
+      overflow: hidden;
+      transition: max-height 1s;
+   }
+   .navigation a {
+      display: block;
+      /* width: 100%; */
+      text-align: left;
+   }
+   .navigation.open {
+      max-height: 50vh;
+   }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>fist website</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="tce7itu0c5071.webp">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="menu.js"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <button class="nav-button" type="button">
+            <i class="fa-solid fa-bars"></i> 
+        </button>
+        <img class="logo" src="6011781.png">
+        <form id="search-form">
+            <input type="text" name="search-keywords" id="search">
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+        <nav class="navigation">
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                Home
+            </a>
+            <a href="products.html">Products</a>
+            <a href="news.html">News</a>
+            <a href="contact.html">Contact</a>
+            <a href="support.html">Support</a>
+        </nav>
+    </header>
+    <!-- <div class="banner">
+        <h1>Welcome!</h1>
+    </div> -->
+    <div class="front-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+        <div class="cell">Build your army</div>
+        <div class="cell">Explore a wide range</div>
+        <div class="cell">Become a master tactitian</div>
+        <div class="cell"></div>
+        <div class="cell">Retro minis</div>
+    </div>
+    <main class="content">
+        <h2>Dante's minis</h2>
+        <p>
+           Welcome to Dante's Minis!
+           
+            As a passionate hobbyist and collector, I have created this website to share my love for Warhammer miniatures with fellow enthusiasts.
+             Here, you will find a showcase of my collection, which spans across various Warhammer universes, including Warhammer 40,000.
+
+             I have always been fascinated by the intricate details and rich lore of the Warhammer world, and through this website,
+              I aim to not only display my collection but also to provide insights into painting techniques, conversion ideas, and tips for assembling and customizing your own miniatures.
+            
+              Whether you're a seasoned collector, a newcomer to the hobby, or simply curious about the world of Warhammer, I hope this website serves as a source of inspiration and enjoyment.
+             Join me on this journey into the realms of imagination and creativity, fueled by a shared passion for Warhammer miniatures!
+        </p>
+        <div class="card-grid">
+            <div class="card">
+                <img src="products/New range.jpg" class="card-image">
+                <h3>New products</h3>
+                <p>
+                    Brand new range of minis, all equipped with the newest upgrades to the minis that have been added since 2019 onwards. 
+                    Gear up with all you need to start a new army in 2024!
+                </p>
+                <button type="button" class="card-button">Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="products/you love em.jpg" class="card-image">
+                <h3>Best selling</h3>
+                <p>
+                    It's all the goods you've known up until now, you love them and you can't get enough of them
+                </p>
+                <button type="button" class="card-button">Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="products/Retrominis.jpg" class="card-image">
+                <h3>90's minis</h3>
+                <p>
+                    take a trip back to 1994 and relive the magic nostalgia that overflows out of these minis. 
+                </p>
+                <button type="button" class="card-button">Add to cart</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="copyright">&copy; Dante 2024</p>
+    </footer>
+</body>
+
+</html>

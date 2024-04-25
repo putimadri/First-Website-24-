@@ -1,0 +1,175 @@
+:root {
+    --main-font: "Roboto", sans-serif;
+    --jet: hsla(0, 0%, 18%, 1);
+    --rose-pompadour: hsla(342, 57%, 68%, 1);
+    --dodger-blue: hsla(205, 94%, 52%, 1);
+    --white: hsla(0, 0%, 100%, 1);
+    --vanilla: hsla(50, 66%, 80%, 1);
+}
+
+body {
+    /* font-family:Arial, Helvetica, sans-serif; */
+    font-family: var(--main-font);
+    background-color: var(--vanilla);
+    color: var(--jet);
+    margin: 0px;
+}
+
+.logo {
+    max-width: 90px;
+    display: block;
+    /* margin: auto; */
+}
+
+.navigation {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation a {
+    color: var(--jet);
+    text-decoration: none;
+    padding: 20px 10px;
+    display: inline-block;
+}
+
+/* .navigation a:nth-child(2) {
+    color: red;
+} */
+.navigation a:hover {
+    background-color: var(--dodger-blue);
+}
+
+.banner {
+    /* 50vh = 50% window height */
+    min-height: 50vh;
+    background-image: url("");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1 {
+    font-size: 3em;
+    font-weight: 800;
+    color:var(--white);
+    /* X offset Y offset Blur Color */
+    text-shadow: 0px 0px 2px black;
+    letter-spacing: 20px;
+}
+
+.banner h1:hover {
+    filter: blur(5px);
+}
+
+.main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+#search-form {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em;
+}
+
+#search-form input {
+    border: 1px solid #7d7d7d;
+    padding: 0.5em;
+    flex: 1;
+}
+
+#search-form button {
+    border: 1px solid #7d7d7d;
+    padding: 0.5em;
+}
+
+.content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+}
+
+.card-image {
+    max-width: 100%;
+    display: block;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+.front-carousel {
+    min-width: 100%;
+    min-height: 50vh;
+    background-color: var(--rose-pompadour);
+}
+.cell {
+    width: 100%;
+    min-height: 50vh;
+    display: grid;
+    place-items: center;
+}
+.cell:nth-child(1) {
+    background-color: aquamarine;
+    background-image: url("carousel/banner_v1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgba(255, 225, 0, 0);
+    font-size: 4em;
+}
+.cell:nth-child(2) {
+    background-color:blueviolet;
+    background-image: url("carousel/backup-article-558443200648_88e3463f-88d6-4746-961f-5b4f9b4f4c83.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgba(255, 230, 0, 0);
+    font-size: 4em;
+}
+.cell:nth-child(3) {
+    background-color:blueviolet;
+    background-image: url("carousel/warhammer-40k-miniatures-game-miniatures-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgba(255, 255, 255, 0);
+    font-size: 4em;
+}
+.cell:nth-child(4) {
+    background-color:blueviolet;
+    background-image: url("carousel/warhammer-40k-review-10e.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgba(255, 255, 255, 0);
+    font-size: 4em;
+}
+.cell:nth-child(5) {
+    background-color:blueviolet;
+    background-image: url("carousel/Retro.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgba(255, 255, 255, 0);
+    font-size: 4em;
+}
+.nav-button {
+    font-size: 32px;
+    background-color: transparent;
+    align-self: center;
+    border: solid transparent;
+    color: var(--jet);
+    display: none;
+}
